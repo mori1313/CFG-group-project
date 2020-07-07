@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'coves';
+    src: url(../fonts/coves-light.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'coves';
+    src: url(../fonts/coves-bold.otf);
+    font-weight: 600;
+}
+
+body{
+    background-color: #485696;
+}
+
+h2{
+    font-family: 'coves';
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.nav-bar{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    height: 50px;
+    align-items: center;
+    font-family: 'coves';
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 5px solid #E76D83;
+}
+.nav-left{
+    height: 100%;
+}
+#logo{
+    height: 90%;
+}
+.menu-icon>img{
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.nav-right>ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-link-wrapper>li{
+    padding: 0px 20px;
+    transition-duration: 1s;
+    display: inline-block;
+}
+
+.nav-link-wrapper{
+    display: inline-block;
+    padding: 2px;
+    margin: 0px 20px;
+    border-bottom: transparent 2px solid;
+    transition: border 1s;
+}
+
+.nav-link-wrapper>a{
+    display: inline-block;
+    text-decoration: none;
+    color: #485696;
+    transition: color 1s, border 1s;
+}
+.nav-link-wrapper:hover{
+    border-bottom: #08a4bd solid 2px;
+}
+.nav-link-wrapper>a:hover{
+    color: #08a4bd;
+    transition-duration: 1s;
+}
+
+#phoneNav{
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    font-family: 'coves';
+    color: #485696;
+}
+
+#phoneNav>ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+#phoneNav>ul>li{
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+}
+
+#phoneNav>ul>li:hover{
+    background-color: #485696;
+    color: #ffffff;
+}
+
+#phoneNav>ul>li>a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #485696;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+
+#phoneNav>ul>li>a:hover{
+    color: #ffffff;
+}
+
+
+@media (max-width: 560px){
+    .nav-right{
+        display: none;
+    }
+
+    .menu-icon>img{
+        display: block;
+        transition: 1s;
+    }
+
+    .menu-icon>img:hover{
+        transform: scale(1.07);
+    }
+
+}
+
+/* MAIN INTRO PAGE BEGINS- NICOLA */
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  
+  .box-container1{ /* including the pic and all text */
+    display:flex;
+    flex-direction:row;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .box-container2{/* includes text and buttons */
+    display:flex;
+    flex-direction: column; /* trying to have the h1, h3, and box-buttons one on top of another */
+    margin-top: 100px;
+  }
+  
+  .main_pic {
+    margin: 100px 50px;
+    width: 500px;
+    display:flex;
+  }
+  
+  h1 {
+    margin-top: 18px;
+    margin-bottom: 50px;
+    font-family: 'coves';
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 40px;
+  }
+
+  h3{
+    margin-bottom: 50px; /* WHY DID THIS NOT WORK WHEN I TRIED TO COMBINE WITH H1? */
+    font-family: 'coves';
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 25px;
+  }
+  
+  button{
+    flex-direction:row; 
+    background-color: #E76D83; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'coves';
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 25px;
+  }
+  
+  .box-buttons{
+    display:flex;
+    margin-top: 20px;
+  }
+  
+  .button{
+    margin-right: 20px;
+  }
+
+  /* INTRO PAGE ENDS */
+  /* NOVEL INFO STARTS MISHAAL */
+  h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 20px;
+}
+
+.box1{
+    line-height: 26px;
+    font-size: 18px;
+    text-align: left;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    padding: 60px;
+
+}
+
+.image1{
+    width: 200px;
+ }
+    
+
+.box2{
+    line-height: 26px;
+    font-size: 18px;
+    text-align: left;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    padding: 60px;
+
+}
+
+.image2{
+    width: 200px;
+}
+
+.box3{
+    line-height: 26px;
+    font-size: 18px;
+    text-align: left;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;   
+    padding: 60px;
+}
+
+.image3{
+    width: 200px;
+}
+/* NOVEL INFO ENDS MISHAAL */
+
+/* Georgina Sign Up Page */
+.sign-up-form
+{
+   width: 350px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3); 
+    background: #fff;
+    padding: 40px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+.sign-up-form
+{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+.input-box
+{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+.main>.sign-up-form>button
+{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sign-btn
+{
+    background-color: #1c8adb;
+}
+.google-btn
+{
+    background-color: #21afde;
+}
+a
+{
+    text-decoration: none;
+}
+hr
+{
+    margin-top: 20px;
+    width: 80%;
+}
+.or
+{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+#user_logo
+{
+    width: 70px;
+    margin-top: -70px;
+}
