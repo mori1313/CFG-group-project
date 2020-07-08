@@ -8,3 +8,11 @@ function showMenu() {
     }
 }
 
+const parralax = document.getElementById('parralax')
+
+window.addEventListener('scroll', function(){
+
+    let scrollPosition = window.pageYOffset
+
+    parralax.style.backgroundPositionY = scrollPosition * 0.5 + 'px'
+})
