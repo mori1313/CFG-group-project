@@ -311,29 +311,68 @@ hr {
     margin-top: -70px;
 }
 
+
 /* Parralax 1 */
-#parralax{
-    background-image: url('https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+.parralax{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 90%;
-    height: 40vh;
+    width: 100%;
+    /* min-width: 1000px; */
+    height: 70vh;
     position: absolute;
-    background-position: center;
     background-size: cover;
-    border: 6px solid #485696;
 }
 
-.ptitle{
-font-size: 70px;
-font-weight: 600;
-color: #ffffff;
-position: relative;
+
+#parralax1{
+    background-image: url(../images/parallax/pexels-photo-3938023.jpeg);
+
 }
 
-#roles{
-    margin-top: 45vh; /* Need margin to stop overlap of absolute image */
-    height: 20vh;
+#parralax2{
+    background-image:url(../images/parallax/thisisengineering-raeng-04y9odvfymw-unsplash.jpg);
+}
+
+
+/* Roles */
+#main-colour{
+    background-color: #485696;
+    margin: 0 ;
+    width: 100%;
+    margin-top: 72vh; 
+    height: 100vh;
+    padding-top:20px ;
+}
+#roles{/* Need margin to stop overlap of absolute image */
+    padding: 20px;
+}
+
+#roles-title{
+    font-size: 5vw;
+    padding: 15px;
+    background-color: #485696;
+    display: inline-block;
+    
+}
+
+
+/* Quiz */
+#quiz{
+    margin-top: 80vh;
+    padding-bottom: 20vh;
+}
+
+#quiz-title{
+    text-align: end;
+}
+
+#quiz-description{
+    padding: 20px;
+    text-align: center;
+}
+
+.quiz-wrapper{
+    text-align: center;
 }
